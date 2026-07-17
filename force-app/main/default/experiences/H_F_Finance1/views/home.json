@@ -1,0 +1,155 @@
+{
+  "appPageId" : "a708ee3e-4593-4bf4-b1e1-3f84167b9fbc",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ea3145a1-a4ea-4002-8126-ec66eb986f51",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:hfSiteHeader",
+      "id" : "e1e1c1d1-5555-4a11-9a11-eeee55550001",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b83ad382-e927-4618-a855-c719108f59d2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "clientVersion" : "WebV1",
+        "deploymentName" : "HF_Saathi_Experience_Site_Channel",
+        "hideChatButtonOnLoad" : "Visible",
+        "isExpSiteAuthMode" : true,
+        "scrtUrl" : "https://orgfarm-b3f5cab911-dev-ed.develop.my.salesforce-scrt.com",
+        "siteEndpoint" : "https://orgfarm-b3f5cab911-dev-ed.develop.my.site.com/ESWHFSaathiExperienceS1782323442403"
+      },
+      "componentName" : "experience_messaging:embeddedMessaging",
+      "id" : "582e74cb-09c0-450a-aa4f-94dff6525083",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:hfHeroSection",
+      "id" : "f1a1b001-1111-4a11-9a11-111111110001",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:embeddedMessagingSetRecordUser",
+      "id" : "abc1b926-65ea-4cbb-b8d0-e854af815c4c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div id=\"our-plans\" style=\"background: #F6F8FB; padding: 0 20px 64px;\"><div style=\"max-width: 1080px; margin: -56px auto 0; background: #FFFFFF; border-radius: 24px; box-shadow: 0 24px 60px rgba(10,31,68,0.16); padding: 40px 32px; display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; text-align: center; position: relative; z-index: 2;\"><div><p style=\"font-size: 34px; font-weight: 800; color: #0A1F44; margin: 0;\">50,000+</p><p style=\"font-size: 13px; color: #5B6B82; margin: 6px 0 0; text-transform: uppercase; letter-spacing: 0.05em;\">Families Protected</p></div><div><p style=\"font-size: 34px; font-weight: 800; color: #0A1F44; margin: 0;\">&#8377;500 Cr+</p><p style=\"font-size: 13px; color: #5B6B82; margin: 6px 0 0; text-transform: uppercase; letter-spacing: 0.05em;\">Claims Settled</p></div><div><p style=\"font-size: 34px; font-weight: 800; color: #0A1F44; margin: 0;\">98%</p><p style=\"font-size: 13px; color: #5B6B82; margin: 6px 0 0; text-transform: uppercase; letter-spacing: 0.05em;\">Claim Settlement Ratio</p></div><div><p style=\"font-size: 34px; font-weight: 800; color: #0A1F44; margin: 0;\">8</p><p style=\"font-size: 13px; color: #5B6B82; margin: 6px 0 0; text-transform: uppercase; letter-spacing: 0.05em;\">Insurance Plans</p></div></div></div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f1a1b002-1111-4a11-9a11-111111110002",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background: #FFFFFF; padding: 8px 24px 72px;\"><div style=\"max-width: 900px; margin: 0 auto; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;\"><div style=\"flex: 1 1 320px; background: #F6F8FB; border-radius: 20px; padding: 32px; box-shadow: 0 16px 36px rgba(0,112,210,0.08); border-top: 4px solid #0070D2;\"><p style=\"font-weight: 800; color: #0A1F44; font-size: 18px; margin: 0 0 10px;\">&#129658; Health Insurance</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.7; margin: 0;\">Covers hospitalisation and medical costs so an illness or accident never becomes a financial crisis.</p></div><div style=\"flex: 1 1 320px; background: #F6F8FB; border-radius: 20px; padding: 32px; box-shadow: 0 16px 36px rgba(201,162,39,0.1); border-top: 4px solid #C9A227;\"><p style=\"font-weight: 800; color: #0A1F44; font-size: 18px; margin: 0 0 10px;\">&#128176; Life Insurance</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.7; margin: 0;\">Provides a guaranteed payout to your family, or builds long-term savings, depending on the plan you choose.</p></div></div></div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "25cb2d07-aaab-451b-a1fe-b892e4d1e1cc",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "heading" : "Plans built around your life",
+        "subheading" : "Choose from our Health and Life Insurance plans, designed for every stage of your journey."
+      },
+      "componentName" : "c:hfInsuranceProductShowcase",
+      "id" : "f1a1b003-1111-4a11-9a11-111111110003",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div id=\"about-us\" style=\"background: #FFFFFF; padding: 80px 24px;\"><div style=\"max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 48px; flex-wrap: wrap;\"><div style=\"flex: 1 1 420px; min-width: 280px; text-align: left;\"><p style=\"display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A6D10; font-weight: 700; margin: 0 0 20px; padding: 7px 18px; border: 1px solid rgba(201,162,39,0.4); border-radius: 999px; background: rgba(201,162,39,0.07);\">About HF Finance</p><p style=\"font-size: 34px; font-weight: 800; margin: 0 0 18px; line-height: 1.2; color: #0A1F44;\">Built on Trust, Backed by Care</p><p style=\"font-size: 16px; color: #5B6B82; line-height: 1.8; max-width: 520px; margin: 0;\">For over 15 years, HF Finance has helped Indian families protect what matters most through honest advice and dependable Health and Life Insurance plans. From our first policy to today's full range of plans, we've stayed focused on clear advice, fast claims, and long-term relationships with every family we serve.</p></div><div style=\"flex: 0 0 260px; text-align: center; background: linear-gradient(135deg, #F6F8FB, #EEF3FA); border-radius: 24px; padding: 36px; box-shadow: 0 20px 44px rgba(10,31,68,0.1);\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KICA8cmVjdCB4PSI0MCIgeT0iMTgwIiB3aWR0aD0iNTAiIGhlaWdodD0iOTAiIGZpbGw9IiMwMDcwRDIiIG9wYWNpdHk9IjAuODUiIHJ4PSI2Ii8+CiAgPHJlY3QgeD0iMTIwIiB5PSIxNDAiIHdpZHRoPSI1MCIgaGVpZ2h0PSIxMzAiIGZpbGw9IiMwMDcwRDIiIG9wYWNpdHk9IjAuOSIgcng9IjYiLz4KICA8cmVjdCB4PSIyMDAiIHk9IjkwIiB3aWR0aD0iNTAiIGhlaWdodD0iMTgwIiBmaWxsPSIjMEExRjQ0IiByeD0iNiIvPgogIDxyZWN0IHg9IjI4MCIgeT0iNTAiIHdpZHRoPSI1MCIgaGVpZ2h0PSIyMjAiIGZpbGw9IiNDOUEyMjciIHJ4PSI2Ii8+CiAgPHBhdGggZD0iTTQwIDE3MCBMMTMwIDEyMCBMMjEwIDgwIEwzMjAgMzUiIHN0cm9rZT0iIzBBMUY0NCIgc3Ryb2tlLXdpZHRoPSI2IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMjk1IDI4IEwzMjAgMzUgTDMxMiA2MCIgc3Ryb2tlPSIjMEExRjQ0IiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K\" alt=\"HF Finance growth and trust\" style=\"width: 220px; max-width: 100%; height: auto;\" /></div></div></div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "b1b1c1d1-2222-4a11-9a11-bbbb22220002",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background: #F6F8FB; padding: 16px 24px 80px;\"><p style=\"text-align: center; font-size: 30px; font-weight: 800; color: #0A1F44; margin: 0 0 44px;\">What We Stand For</p><div style=\"display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;\"><div style=\"background: #FFFFFF; border-radius: 20px; padding: 32px; max-width: 280px; box-shadow: 0 16px 36px rgba(10,31,68,0.07); text-align: center;\"><div style=\"width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,112,210,0.12), rgba(10,31,68,0.08)); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 26px;\">&#9878;&#65039;</div><p style=\"font-weight: 700; color: #0A1F44; margin: 0 0 8px; font-size: 16px;\">Integrity</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.6; margin: 0;\">Honest advice, transparent pricing, no fine-print surprises.</p></div><div style=\"background: #FFFFFF; border-radius: 20px; padding: 32px; max-width: 280px; box-shadow: 0 16px 36px rgba(10,31,68,0.07); text-align: center;\"><div style=\"width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,112,210,0.12), rgba(10,31,68,0.08)); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 26px;\">&#10024;</div><p style=\"font-weight: 700; color: #0A1F44; margin: 0 0 8px; font-size: 16px;\">Simplicity</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.6; margin: 0;\">Plans explained in plain language, not jargon.</p></div><div style=\"background: #FFFFFF; border-radius: 20px; padding: 32px; max-width: 280px; box-shadow: 0 16px 36px rgba(10,31,68,0.07); text-align: center;\"><div style=\"width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, rgba(201,162,39,0.18), rgba(201,162,39,0.08)); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 26px;\">&#128156;</div><p style=\"font-weight: 700; color: #0A1F44; margin: 0 0 8px; font-size: 16px;\">Care</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.6; margin: 0;\">Every policy is a promise we take personally.</p></div></div></div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "b1b1c1d1-2222-4a11-9a11-bbbb22220005",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><strong>Why Families Choose HF Finance</strong></p><p style=\"text-align: center;\">🤝</p><p style=\"text-align: center;\"><strong>Trusted Advisors</strong></p><p style=\"text-align: center;\">Certified agents who understand your family's needs.</p><p style=\"text-align: center;\">⚡</p><p style=\"text-align: center;\"><strong>Fast Claims</strong></p><p style=\"text-align: center;\">98% of claims settled within days, not months.</p><p style=\"text-align: center;\">👪</p><p style=\"text-align: center;\"><strong>Family-First Plans</strong></p><p style=\"text-align: center;\">Cover every member, every life stage, under one roof.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f1a1b004-1111-4a11-9a11-111111110004",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: left;\"><strong>Contact Us</strong></p><p style=\"text-align: left;\"><strong>We're Here to Help</strong></p><p style=\"text-align: left;\">Questions about a plan, a claim, or your policy? Reach our team below, or login to manage everything from your account.</p><p style=\"text-align: center;\"><img src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIj4KICA8cmVjdCB4PSI0MCIgeT0iOTAiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTUwIiByeD0iMTQiIGZpbGw9IiMwQTFGNDQiLz4KICA8cGF0aCBkPSJNNDAgMTAwIEwxNTAgMTkwIEwyNjAgMTAwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHJlY3QgeD0iNDAiIHk9IjkwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjE1MCIgcng9IjE0IiBmaWxsPSJub25lIiBzdHJva2U9IiNDOUEyMjciIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2Zz4K\" alt=\"Contact HF Finance\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d1d1c1d1-4444-4a11-9a11-dddd44440002",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background: #FFFFFF; padding: 8px 24px 80px;\"><div style=\"display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;\"><div style=\"background: #FFFFFF; border: 1px solid rgba(10,31,68,0.06); border-radius: 20px; padding: 32px; max-width: 260px; text-align: center; box-shadow: 0 16px 36px rgba(10,31,68,0.07);\"><div style=\"width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, #0A1F44, #0070D2); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px;\">&#128222;</div><p style=\"font-weight: 700; color: #0A1F44; margin: 0 0 8px;\">Call Us</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.6; margin: 0;\">1800-123-4567<br/>Mon&ndash;Sat, 9am&ndash;7pm</p></div><div style=\"background: #FFFFFF; border: 1px solid rgba(10,31,68,0.06); border-radius: 20px; padding: 32px; max-width: 260px; text-align: center; box-shadow: 0 16px 36px rgba(10,31,68,0.07);\"><div style=\"width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, #0A1F44, #0070D2); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px;\">&#9993;&#65039;</div><p style=\"font-weight: 700; color: #0A1F44; margin: 0 0 8px;\">Email Us</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.6; margin: 0;\">support@hffinance.example<br/>We reply within 24 hours</p></div><div style=\"background: #FFFFFF; border: 1px solid rgba(10,31,68,0.06); border-radius: 20px; padding: 32px; max-width: 260px; text-align: center; box-shadow: 0 16px 36px rgba(10,31,68,0.07);\"><div style=\"width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, #0A1F44, #0070D2); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px;\">&#127968;</div><p style=\"font-weight: 700; color: #0A1F44; margin: 0 0 8px;\">Visit Us</p><p style=\"color: #5B6B82; font-size: 14px; line-height: 1.6; margin: 0;\">HF Finance House,<br/>MG Road, Bengaluru</p></div></div></div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d1d1c1d1-4444-4a11-9a11-dddd44440003",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:hfMemberCta",
+      "id" : "f1a1b005-1111-4a11-9a11-111111110005",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d6f4cb92-a063-4f1b-a71e-209a9d1f7d0e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "843bdaad-247a-4243-972b-a9c0743c5a86",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Health and Life Insurance plans from HF Finance, tailored for every Indian family. Learn about our story, plans, and get in touch.",
+        "title" : "HF Finance — Health & Life Insurance"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fae14dd3-8142-4935-99bb-4f35e4aa9214",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "092c27de-4aa2-4621-afac-fa24d3f42837",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

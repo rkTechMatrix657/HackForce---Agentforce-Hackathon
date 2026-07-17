@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance__c</fullName>
+    <label>Insurance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(HFLTR001) HF Jeevan Suraksha</fullName>
+                <default>false</default>
+                <label>(HFLTR001) HF Jeevan Suraksha</label>
+            </value>
+            <value>
+                <fullName>(HFHTR002) HF Arogya Suraksha</fullName>
+                <default>false</default>
+                <label>(HFHTR002) HF Arogya Suraksha</label>
+            </value>
+            <value>
+                <fullName>(HFLEN003) HF Jeevan Samriddhi</fullName>
+                <default>false</default>
+                <label>(HFLEN003) HF Jeevan Samriddhi</label>
+            </value>
+            <value>
+                <fullName>(HFLCP004) HF Bal Labh</fullName>
+                <default>false</default>
+                <label>(HFLCP004) HF Bal Labh</label>
+            </value>
+            <value>
+                <fullName>(HFLUL005) HF Nivesh Jeevan</fullName>
+                <default>false</default>
+                <label>(HFLUL005) HF Nivesh Jeevan</label>
+            </value>
+            <value>
+                <fullName>(HFHEN006) HF Jeevan Labh</fullName>
+                <default>false</default>
+                <label>(HFHEN006) HF Jeevan Labh</label>
+            </value>
+            <value>
+                <fullName>(HFLCP007) HF Bal Jeevan Umang</fullName>
+                <default>false</default>
+                <label>(HFLCP007) HF Bal Jeevan Umang</label>
+            </value>
+            <value>
+                <fullName>(HFLUL008) HF Index Plus</fullName>
+                <default>false</default>
+                <label>(HFLUL008) HF Index Plus</label>
+            </value>
+            <value>
+                <fullName>Child Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Child Plan</label>
+            </value>
+            <value>
+                <fullName>Critical Illness</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Critical Illness</label>
+            </value>
+            <value>
+                <fullName>Endowment Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Endowment Plan</label>
+            </value>
+            <value>
+                <fullName>Health Insurance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Health Insurance</label>
+            </value>
+            <value>
+                <fullName>Personal Accident</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Personal Accident</label>
+            </value>
+            <value>
+                <fullName>Term Insurance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Term Insurance</label>
+            </value>
+            <value>
+                <fullName>ULIP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ULIP</label>
+            </value>
+            <value>
+                <fullName>Whole Life</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Whole Life</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

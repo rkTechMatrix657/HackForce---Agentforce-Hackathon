@@ -1,0 +1,47 @@
+<template>
+    <div id="home" class="hf-hero">
+        <div class="hf-hero__orb hf-hero__orb_gold"></div>
+        <div class="hf-hero__orb hf-hero__orb_blue"></div>
+        <div class="hf-hero__grid"></div>
+
+        <div class="hf-hero__inner">
+            <div class="hf-hero__copy">
+                <p class="hf-hero__eyebrow">HF Finance &mdash; Health &amp; Life Insurance</p>
+                <h1 class="hf-hero__heading">Protecting What Matters Most</h1>
+                <p class="hf-hero__subcopy">Health and Life Insurance plans tailored for every Indian family &mdash; backed by trusted advisors and fast claims.</p>
+
+                <div class="hf-hero__actions">
+                    <a href="#our-plans" class="hf-hero__cta-primary">
+                        <span>Explore Plans</span>
+                    </a>
+                    <template if:true={isGuestUser}>
+                        <a href="/HFFinance/s/login/SelfRegister" class="hf-hero__cta-ghost-gold">Sign Up</a>
+                        <a href="/HFFinance/s/login" class="hf-hero__cta-ghost">Login</a>
+                    </template>
+                </div>
+
+                <div class="hf-hero__trust">
+                    <div class="hf-hero__trust-item">
+                        <p class="hf-hero__trust-value">50,000+</p>
+                        <p class="hf-hero__trust-label">Families Protected</p>
+                    </div>
+                    <div class="hf-hero__trust-divider"></div>
+                    <div class="hf-hero__trust-item">
+                        <p class="hf-hero__trust-value">4.8 <span class="hf-hero__trust-star">★</span></p>
+                        <p class="hf-hero__trust-label">Customer Rating</p>
+                    </div>
+                    <div class="hf-hero__trust-divider"></div>
+                    <div class="hf-hero__trust-item">
+                        <p class="hf-hero__trust-value">48 Hrs</p>
+                        <p class="hf-hero__trust-label">Avg. Claim Settlement</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hf-hero__art">
+                <div class="hf-hero__art-glow"></div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3MEQyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBBMUY0NCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBhdGggZD0iTTIwMCAzMCBMMzQwIDkwIEwzNDAgMjEwIEMzNDAgMzAwIDI4MCAzNTAgMjAwIDM4MCBDMTIwIDM1MCA2MCAzMDAgNjAgMjEwIEw2MCA5MCBaIiBmaWxsPSJ1cmwoI2cxKSIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE3MCIgcj0iNTUiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMTUiLz4KICA8cGF0aCBkPSJNMTYwIDE4MCBMMTg1IDIwNSBMMjQ1IDE0MCIgc3Ryb2tlPSIjQzlBMjI3IiBzdHJva2Utd2lkdGg9IjE0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIxNDAiIGN5PSIyNzAiIHI9IjIyIiBmaWxsPSIjRkZGRkZGIi8+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjYwIiByPSIyNiIgZmlsbD0iI0ZGRkZGRiIvPgogIDxjaXJjbGUgY3g9IjI2MCIgY3k9IjI3MCIgcj0iMjIiIGZpbGw9IiNGRkZGRkYiLz4KICA8cGF0aCBkPSJNMTEwIDMyMCBRMTQwIDI5MCAxNzAgMzIwIEwxNzAgMzQwIEwxMTAgMzQwIFoiIGZpbGw9IiNGRkZGRkYiLz4KICA8cGF0aCBkPSJNMTcwIDMzMCBRMjAwIDI5NSAyMzAgMzMwIEwyMzAgMzUwIEwxNzAgMzUwIFoiIGZpbGw9IiNGRkZGRkYiLz4KICA8cGF0aCBkPSJNMjMwIDMyMCBRMjYwIDI5MCAyOTAgMzIwIEwyOTAgMzQwIEwyMzAgMzQwIFoiIGZpbGw9IiNGRkZGRkYiLz4KPC9zdmc+Cg==" alt="HF Finance protection shield" class="hf-hero__art-img" />
+            </div>
+        </div>
+    </div>
+</template>

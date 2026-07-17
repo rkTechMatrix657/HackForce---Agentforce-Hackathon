@@ -1,0 +1,109 @@
+<template>
+    <section class="hf-showcase">
+        <div class="hf-showcase__header">
+            <p class="hf-showcase__eyebrow">Our Plans · Live Catalog</p>
+            <h2 class="hf-showcase__heading">{heading}</h2>
+            <p class="hf-showcase__subheading">{subheading}</p>
+
+            <div class="hf-filter-row">
+                <template for:each={filters} for:item="filter">
+                    <button
+                        key={filter.value}
+                        class={filter.cssClass}
+                        data-value={filter.value}
+                        onclick={handleFilterClick}
+                        type="button"
+                    >{filter.label}</button>
+                </template>
+            </div>
+        </div>
+
+        <template if:true={hasProducts}>
+            <div class="hf-card-grid">
+                <template for:each={products} for:item="product">
+                    <article key={product.code} class={product.cardClass}>
+                        <div class="hf-card__badge-row">
+                            <span class="hf-card__icon">{product.icon}</span>
+                            <span class={product.insuranceType}>{product.insuranceType}</span>
+                        </div>
+                        <h3 class="hf-card__title">{product.name}</h3>
+                        <p class="hf-card__code">{product.code} &middot; {product.subCategory}</p>
+                        <p class="hf-card__tagline">{product.shortDescription}</p>
+                        <div class="hf-card__stats">
+                            <div class="hf-card__stat">
+                                <p class="hf-card__stat-label">Sum Assured</p>
+                                <p class="hf-card__stat-value">{product.sumAssuredRange}</p>
+                            </div>
+                            <div class="hf-card__stat">
+                                <p class="hf-card__stat-label">Policy Term</p>
+                                <p class="hf-card__stat-value">{product.policyTermRange}</p>
+                            </div>
+                        </div>
+                        <div class="hf-card__premium-strip">
+                            <span class="hf-card__premium-label">Starting from</span>
+                            <span class="hf-card__premium-value">{product.startingPremiumLabel}</span>
+                        </div>
+
+                        <button
+                            class="hf-card__toggle"
+                            data-code={product.code}
+                            onclick={handleToggleExpand}
+                            type="button"
+                        >{product.toggleLabel}</button>
+
+                        <template if:true={product.isExpanded}>
+                            <div class="hf-plan-list">
+                                <template for:each={product.plans} for:item="plan">
+                                    <div key={plan.id} class="hf-plan-row">
+                                        <div class="hf-plan-row__age">{plan.ageBand}</div>
+                                        <div class="hf-plan-row__details">
+                                            <p class="hf-plan-row__premium">{plan.premiumLabel}<span class="hf-plan-row__per">/month</span></p>
+                                            <p class="hf-plan-row__meta">Sum Assured {plan.sumAssuredLabel} &middot; {plan.termLabel}</p>
+                                            <p class="hf-plan-row__freq">{plan.frequencyLabel}</p>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+
+                        <button
+                            class="hf-card__cta"
+                            data-code={product.code}
+                            onclick={handleExploreClick}
+                            type="button"
+                        >Explore Plan →</button>
+                    </article>
+                </template>
+            </div>
+        </template>
+
+        <template if:false={hasProducts}>
+            <div class="hf-card-grid">
+                <div class="hf-skeleton-card">
+                    <div class="hf-skeleton-line hf-skeleton-line_badge"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_title"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_text"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_text hf-skeleton-line_short"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_strip"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_btn"></div>
+                </div>
+                <div class="hf-skeleton-card">
+                    <div class="hf-skeleton-line hf-skeleton-line_badge"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_title"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_text"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_text hf-skeleton-line_short"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_strip"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_btn"></div>
+                </div>
+                <div class="hf-skeleton-card">
+                    <div class="hf-skeleton-line hf-skeleton-line_badge"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_title"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_text"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_text hf-skeleton-line_short"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_strip"></div>
+                    <div class="hf-skeleton-line hf-skeleton-line_btn"></div>
+                </div>
+            </div>
+        </template>
+    </section>
+</template>

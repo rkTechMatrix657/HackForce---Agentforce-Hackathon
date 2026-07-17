@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Life_Stage__c</fullName>
+    <label>Life Stage</label>
+    <type>Text</type>
+    <length>200</length>
+    <description>Comma-separated life stages where this rule applies. Values: Student,Working,Married,Parent,Retired,All. Matches Contact.Life_Stage__c.</description>
+</CustomField>

@@ -1,0 +1,310 @@
+<template>
+    <section class="hf-dash">
+        <div class="hf-dash__header">
+            <p class="hf-profile__eyebrow">Account · My Insurance</p>
+            <h2 class="hf-profile__heading">Policies, Payments &amp; Support</h2>
+            <p class="hf-profile__subheading">Everything about your coverage, in one place.</p>
+        </div>
+
+        <div class="hf-tab-row">
+            <template for:each={tabs} for:item="tab">
+                <button
+                    key={tab.id}
+                    class={tab.cssClass}
+                    data-tab={tab.id}
+                    onclick={handleTabClick}
+                    type="button"
+                >
+                    <span class="hf-tab__icon">{tab.icon}</span>
+                    <span>{tab.label}</span>
+                </button>
+            </template>
+        </div>
+
+        <div class="hf-dash__panel">
+            <!-- POLICIES -->
+            <template if:true={isPolicies}>
+                <template if:true={isLoadingPolicies}>
+                    <div class="hf-skeleton-card"></div>
+                </template>
+                <template if:false={isLoadingPolicies}>
+                    <template if:true={hasPolicies}>
+                        <div class="hf-policy-grid">
+                            <template for:each={policies} for:item="p">
+                                <article key={p.key} class="hf-policy-card">
+                                    <div class="hf-policy-card__top">
+                                        <div>
+                                            <p class="hf-policy-card__name">{p.productName}</p>
+                                            <p class="hf-policy-card__number">{p.policyNumber} · {p.insuranceType}</p>
+                                        </div>
+                                        <span class={p.statusClass}>{p.status}</span>
+                                    </div>
+
+                                    <div class="hf-policy-card__stats">
+                                        <div class="hf-policy-card__stat">
+                                            <p class="hf-policy-card__stat-label">Premium</p>
+                                            <p class="hf-policy-card__stat-value">{p.premiumLabel}<span class="hf-policy-card__freq"> / {p.frequencyLabel}</span></p>
+                                        </div>
+                                        <div class="hf-policy-card__stat">
+                                            <p class="hf-policy-card__stat-label">Sum Assured</p>
+                                            <p class="hf-policy-card__stat-value">{p.sumAssuredLabel}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="hf-policy-card__dates">
+                                        <span>Issued {p.issueDateLabel}</span>
+                                        <span class="hf-policy-card__dot">&#9670;</span>
+                                        <span>Valid till {p.endDateLabel}</span>
+                                    </div>
+
+                                    <div class="hf-policy-card__progress-row">
+                                        <p class="hf-policy-card__progress-label">Installments Paid: {p.installmentsPaid} · Pending: {p.installmentsPending}</p>
+                                        <p class="hf-policy-card__progress-pct">{p.progressPercent}%</p>
+                                    </div>
+                                    <div class="hf-progress">
+                                        <div class="hf-progress__fill" style={p.progressStyle}></div>
+                                    </div>
+                                    <template if:true={p.hasOverdue}>
+                                        <p class="hf-policy-card__overdue">&#9888; {p.installmentsOverdue} installment(s) overdue</p>
+                                    </template>
+                                </article>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={hasPolicies}>
+                        <div class="hf-empty">
+                            <p class="hf-empty__icon">&#128193;</p>
+                            <p class="hf-empty__title">No policies yet</p>
+                            <p class="hf-empty__text">Once you purchase a plan, it will show up here with full details.</p>
+                            <a href="/HFFinance/s/#our-plans" class="hf-empty__cta">Explore Plans</a>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+            <!-- PAYMENTS -->
+            <template if:true={isPayments}>
+                <template if:true={isLoadingPayments}>
+                    <div class="hf-skeleton-card"></div>
+                </template>
+                <template if:false={isLoadingPayments}>
+                    <template if:true={hasPayments}>
+                        <div class="hf-list">
+                            <template for:each={payments} for:item="p">
+                                <div key={p.key} class="hf-list-row">
+                                    <div class="hf-list-row__main">
+                                        <p class="hf-list-row__title">{p.paymentNumber} <span class="hf-list-row__sub">· {p.policyNumber}</span></p>
+                                        <p class="hf-list-row__meta">{p.mode} · {p.dateLabel} · Txn {p.transactionId}</p>
+                                    </div>
+                                    <div class="hf-list-row__end">
+                                        <p class="hf-list-row__amount">{p.amountLabel}</p>
+                                        <span class={p.statusClass}>{p.status}</span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={hasPayments}>
+                        <div class="hf-empty">
+                            <p class="hf-empty__title">No payments yet</p>
+                            <p class="hf-empty__text">Your premium payment history will appear here once you have an active policy.</p>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+            <!-- INSTALLMENTS -->
+            <template if:true={isInstallments}>
+                <template if:true={isLoadingInstallments}>
+                    <div class="hf-skeleton-card"></div>
+                </template>
+                <template if:false={isLoadingInstallments}>
+                    <template if:true={hasInstallments}>
+                        <div class="hf-list">
+                            <template for:each={installments} for:item="i">
+                                <div key={i.key} class="hf-list-row">
+                                    <div class="hf-list-row__main">
+                                        <p class="hf-list-row__title">Installment #{i.installmentNo} <span class="hf-list-row__sub">· {i.policyNumber}</span></p>
+                                        <p class="hf-list-row__meta">Due {i.dueDateLabel} · Paid {i.paidDateLabel} · Receipt {i.receiptNumber}</p>
+                                    </div>
+                                    <div class="hf-list-row__end">
+                                        <p class="hf-list-row__amount">{i.amountLabel}</p>
+                                        <span class={i.statusClass}>{i.status}</span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={hasInstallments}>
+                        <div class="hf-empty">
+                            <p class="hf-empty__title">No installment schedule yet</p>
+                            <p class="hf-empty__text">Your upcoming and past premium installments will be listed here.</p>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+            <!-- CLAIMS -->
+            <template if:true={isClaims}>
+                <template if:true={isLoadingClaims}>
+                    <div class="hf-skeleton-card"></div>
+                </template>
+                <template if:false={isLoadingClaims}>
+                    <template if:true={hasClaims}>
+                        <div class="hf-list">
+                            <template for:each={claims} for:item="c">
+                                <div key={c.key} class="hf-list-row">
+                                    <div class="hf-list-row__main">
+                                        <p class="hf-list-row__title">{c.claimNumber} <span class="hf-list-row__sub">· {c.policyNumber}</span></p>
+                                        <p class="hf-list-row__meta">{c.claimType} · Filed {c.dateLabel}</p>
+                                    </div>
+                                    <div class="hf-list-row__end">
+                                        <p class="hf-list-row__amount">{c.approvedLabel}</p>
+                                        <span class={c.statusClass}>{c.status}</span>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={hasClaims}>
+                        <div class="hf-empty">
+                            <p class="hf-empty__title">No claims filed</p>
+                            <p class="hf-empty__text">If you ever need to file a claim, our advisors will guide you end-to-end.</p>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+            <!-- CASES -->
+            <template if:true={isCases}>
+                <div class="hf-cases-summary">
+                    <div class="hf-cases-summary__stat">
+                        <p class="hf-cases-summary__value">{openCasesCount}</p>
+                        <p class="hf-cases-summary__label">Open</p>
+                    </div>
+                    <div class="hf-cases-summary__stat">
+                        <p class="hf-cases-summary__value">{closedCasesCount}</p>
+                        <p class="hf-cases-summary__label">Closed</p>
+                    </div>
+                    <button class="hf-case__submit-btn hf-cases-summary__btn" type="button" onclick={handleToggleCaseForm}>{raiseCaseButtonLabel}</button>
+                </div>
+
+                <template if:true={showSuccess}>
+                    <div class="hf-case__card hf-case__success">
+                        <div class="hf-case__success-icon">✓</div>
+                        <h3 class="hf-case__success-heading">Case Submitted</h3>
+                        <p class="hf-case__success-text">Thanks for reaching out — our team will get back to you soon.</p>
+                    </div>
+                </template>
+
+                <template if:true={showCaseForm}>
+                    <div class="hf-case__card">
+                        <template if:true={errorMessage}>
+                            <p class="hf-case__error">{errorMessage}</p>
+                        </template>
+
+                        <div class="hf-case__field">
+                            <label class="hf-case__label" for="hf-case-subject">Subject</label>
+                            <input
+                                id="hf-case-subject"
+                                class="hf-case__input"
+                                type="text"
+                                maxlength="255"
+                                required
+                                value={subject}
+                                onchange={handleSubjectChange}
+                            />
+                        </div>
+
+                        <div class="hf-case__field">
+                            <label class="hf-case__label" for="hf-case-description">Description</label>
+                            <textarea
+                                id="hf-case-description"
+                                class="hf-case__textarea"
+                                rows="5"
+                                required
+                                onchange={handleDescriptionChange}
+                            ></textarea>
+                        </div>
+
+                        <button class="hf-case__submit-btn" type="button" disabled={isSubmitDisabled} onclick={handleSubmitCase}>
+                            {submitButtonLabel}
+                        </button>
+                    </div>
+                </template>
+
+                <template if:true={isLoadingCases}>
+                    <div class="hf-skeleton-card"></div>
+                </template>
+                <template if:false={isLoadingCases}>
+                    <template if:true={hasCases}>
+                        <div class="hf-list">
+                            <template for:each={cases} for:item="c">
+                                <div key={c.key} class={c.cardClass}>
+                                    <div class="hf-list-row">
+                                        <div class="hf-list-row__main">
+                                            <p class="hf-list-row__title">{c.caseNumber} <span class="hf-list-row__sub">· {c.subject}</span></p>
+                                            <p class="hf-list-row__meta">Filed {c.createdLabel}</p>
+                                        </div>
+                                        <div class="hf-list-row__end">
+                                            <span class={c.statusClass}>{c.status}</span>
+                                            <button class="hf-case-row__link" data-case-id={c.id} onclick={handleToggleComments} type="button">{c.toggleLabel}</button>
+                                            <template if:false={c.isClosed}>
+                                                <button class="hf-case-row__close" data-case-id={c.id} disabled={c.isClosing} onclick={handleCloseCase} type="button">Close Case</button>
+                                            </template>
+                                        </div>
+                                    </div>
+
+                                    <template if:true={c.isExpanded}>
+                                        <div class="hf-comments">
+                                            <template if:true={c.isLoadingComments}>
+                                                <p class="hf-comments__loading">Loading comments…</p>
+                                            </template>
+                                            <template if:false={c.isLoadingComments}>
+                                                <template if:true={c.comments.length}>
+                                                    <div class="hf-comments__list">
+                                                        <template for:each={c.comments} for:item="cm">
+                                                            <div key={cm.key} class={cm.rowClass}>
+                                                                <p class="hf-comment__meta">{cm.authorName} · {cm.dateLabel}</p>
+                                                                <p class="hf-comment__body">{cm.body}</p>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </template>
+                                                <template if:false={c.comments.length}>
+                                                    <p class="hf-comments__empty">No comments yet on this case.</p>
+                                                </template>
+                                            </template>
+
+                                            <div class="hf-comments__form">
+                                                <textarea
+                                                    class="hf-case__textarea hf-comments__textarea"
+                                                    rows="3"
+                                                    placeholder="Add a comment…"
+                                                    onchange={handleNewCommentChange}
+                                                ></textarea>
+                                                <button
+                                                    class="hf-case__submit-btn hf-comments__submit-btn"
+                                                    data-case-id={c.id}
+                                                    disabled={isAddCommentDisabled}
+                                                    onclick={handleAddComment}
+                                                    type="button"
+                                                >{addCommentLabel}</button>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={hasCases}>
+                        <div class="hf-empty">
+                            <p class="hf-empty__title">No cases yet</p>
+                            <p class="hf-empty__text">Need help with a policy or claim? Raise a case and our team will assist you.</p>
+                        </div>
+                    </template>
+                </template>
+            </template>
+        </div>
+    </section>
+</template>

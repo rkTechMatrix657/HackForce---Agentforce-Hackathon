@@ -1,0 +1,36 @@
+<template>
+    <section class="hf-profile">
+        <div class="hf-profile__banner">
+            <div class="hf-profile__avatar">{userInitials}</div>
+            <p class="hf-profile__banner-name">{userName}</p>
+            <p class="hf-profile__banner-email">{userEmail}</p>
+        </div>
+
+        <div class="hf-profile__header">
+            <p class="hf-profile__eyebrow">Account · My Profile</p>
+            <h2 class="hf-profile__heading">Your Details</h2>
+            <p class="hf-profile__subheading">Your account's contact information.</p>
+        </div>
+
+        <div class="hf-profile__card">
+            <lightning-record-view-form record-id={userId} object-api-name="User">
+                <div class="hf-profile__grid">
+                    <div class="hf-profile__field">
+                        <lightning-output-field field-name="FirstName"></lightning-output-field>
+                    </div>
+                    <div class="hf-profile__field">
+                        <lightning-output-field field-name="LastName"></lightning-output-field>
+                    </div>
+                    <div class="hf-profile__field">
+                        <lightning-output-field field-name="Email"></lightning-output-field>
+                    </div>
+                    <div class="hf-profile__field">
+                        <lightning-output-field field-name="Phone"></lightning-output-field>
+                    </div>
+                </div>
+            </lightning-record-view-form>
+        </div>
+
+        <c-hf-my-account-dashboard></c-hf-my-account-dashboard>
+    </section>
+</template>

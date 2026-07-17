@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Head_of_Family__c</fullName>
+    <label>Head of Family</label>
+    <type>Lookup</type>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Family (Head of Family)</relationshipLabel>
+    <relationshipName>Family_Head</relationshipName>
+</CustomField>

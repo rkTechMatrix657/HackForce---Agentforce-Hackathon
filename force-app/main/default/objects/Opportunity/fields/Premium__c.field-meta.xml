@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Premium__c</fullName>
+    <label>Premium</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Insurance__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HF Jeevan Suraksha (HFLTR001/25-35 A/500 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Suraksha (HFLTR001/25-35 A/500 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Suraksha (HFLTR001/36-50 A/1000 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Suraksha (HFLTR001/36-50 A/1000 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Arogya Suraksha (HFHTR002/25-35 A/500 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Arogya Suraksha (HFHTR002/25-35 A/500 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Arogya Suraksha (HFHTR002/36-50 A/1000 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Arogya Suraksha (HFHTR002/36-50 A/1000 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Samriddhi (HFLEN003/25-35 A/1000 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Samriddhi (HFLEN003/25-35 A/1000 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Samriddhi (HFLEN003/36-45 A/2500 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Samriddhi (HFLEN003/36-45 A/2500 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Samriddhi (HFLEN003/46-55 A/5000 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Samriddhi (HFLEN003/46-55 A/5000 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Bal Labh (HFLCP004/0-20 A/1000 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Bal Labh (HFLCP004/0-20 A/1000 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Bal Labh (HFLCP004/0-20 A/2500 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Bal Labh (HFLCP004/0-20 A/2500 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Bal Labh (HFLCP004/0-20 A/5000 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Bal Labh (HFLCP004/0-20 A/5000 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Nivesh Jeevan (HFLUL005/25-35 A/1000 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Nivesh Jeevan (HFLUL005/25-35 A/1000 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Nivesh Jeevan (HFLUL005/36-45 A/2500 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Nivesh Jeevan (HFLUL005/36-45 A/2500 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Nivesh Jeevan (HFLUL005/46-55 A/5000 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Nivesh Jeevan (HFLUL005/46-55 A/5000 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Labh (HFHEN006/25-35 A/1000 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Labh (HFHEN006/25-35 A/1000 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Labh (HFHEN006/36-45 A/2500 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Labh (HFHEN006/36-45 A/2500 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Jeevan Labh (HFHEN006/46-55 A/5000 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Jeevan Labh (HFHEN006/46-55 A/5000 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Bal Jeevan Umang (HFLCP007/0-20 A/1000 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Bal Jeevan Umang (HFLCP007/0-20 A/1000 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Bal Jeevan Umang (HFLCP007/0-20 A/2500 INR/15 TY)</fullName>
+                <default>false</default>
+                <label>HF Bal Jeevan Umang (HFLCP007/0-20 A/2500 INR/15 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Bal Jeevan Umang (HFLCP007/0-20 A/5000 INR/20 TY)</fullName>
+                <default>false</default>
+                <label>HF Bal Jeevan Umang (HFLCP007/0-20 A/5000 INR/20 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Index Plus (HFLUL008/25-35 A/1000 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Index Plus (HFLUL008/25-35 A/1000 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Index Plus (HFLUL008/36-45 A/2500 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Index Plus (HFLUL008/36-45 A/2500 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>HF Index Plus (HFLUL008/46-55 A/5000 INR/10 TY)</fullName>
+                <default>false</default>
+                <label>HF Index Plus (HFLUL008/46-55 A/5000 INR/10 TY)</label>
+            </value>
+            <value>
+                <fullName>25-35 Yrs Rs 1000 10 Yr Fund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25-35 Yrs Rs 1000 10 Yr Fund</label>
+            </value>
+            <value>
+                <fullName>25-35 Yrs Rs 1000 15 Yr Fund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25-35 Yrs Rs 1000 15 Yr Fund</label>
+            </value>
+            <value>
+                <fullName>25-35 Yrs Rs 1000 15 Yr Savings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25-35 Yrs Rs 1000 15 Yr Savings</label>
+            </value>
+            <value>
+                <fullName>25-35 Yrs Rs 1000 20 Yr Savings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25-35 Yrs Rs 1000 20 Yr Savings</label>
+            </value>
+            <value>
+                <fullName>25-35 Yrs Rs 500 10 Yr Cover</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25-35 Yrs Rs 500 10 Yr Cover</label>
+            </value>
+            <value>
+                <fullName>25-35 Yrs Rs 500 20 Yr Cover</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25-35 Yrs Rs 500 20 Yr Cover</label>
+            </value>
+            <value>
+                <fullName>36-45 Yrs Rs 2500 10 Yr Fund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36-45 Yrs Rs 2500 10 Yr Fund</label>
+            </value>
+            <value>
+                <fullName>36-45 Yrs Rs 2500 15 Yr Fund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36-45 Yrs Rs 2500 15 Yr Fund</label>
+            </value>
+            <value>
+                <fullName>36-45 Yrs Rs 2500 15 Yr Savings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36-45 Yrs Rs 2500 15 Yr Savings</label>
+            </value>
+            <value>
+                <fullName>36-45 Yrs Rs 2500 20 Yr Savings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36-45 Yrs Rs 2500 20 Yr Savings</label>
+            </value>
+            <value>
+                <fullName>36-50 Yrs Rs 1000 10 Yr Cover</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36-50 Yrs Rs 1000 10 Yr Cover</label>
+            </value>
+            <value>
+                <fullName>36-50 Yrs Rs 1000 20 Yr Cover</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36-50 Yrs Rs 1000 20 Yr Cover</label>
+            </value>
+            <value>
+                <fullName>46-55 Yrs Rs 5000 10 Yr Fund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46-55 Yrs Rs 5000 10 Yr Fund</label>
+            </value>
+            <value>
+                <fullName>46-55 Yrs Rs 5000 15 Yr Fund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46-55 Yrs Rs 5000 15 Yr Fund</label>
+            </value>
+            <value>
+                <fullName>46-55 Yrs Rs 5000 15 Yr Savings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46-55 Yrs Rs 5000 15 Yr Savings</label>
+            </value>
+            <value>
+                <fullName>46-55 Yrs Rs 5000 20 Yr Savings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46-55 Yrs Rs 5000 20 Yr Savings</label>
+            </value>
+            <value>
+                <fullName>Bal Jeevan Umang 0-20 Yrs Rs 1000 10 Yr Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bal Jeevan Umang 0-20 Yrs Rs 1000 10 Yr Plan</label>
+            </value>
+            <value>
+                <fullName>Bal Jeevan Umang 0-20 Yrs Rs 2500 15 Yr Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bal Jeevan Umang 0-20 Yrs Rs 2500 15 Yr Plan</label>
+            </value>
+            <value>
+                <fullName>Bal Jeevan Umang 0-20 Yrs Rs 5000 20 Yr Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bal Jeevan Umang 0-20 Yrs Rs 5000 20 Yr Plan</label>
+            </value>
+            <value>
+                <fullName>Bal Labh 0-20 Yrs Rs 1000 10 Yr Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bal Labh 0-20 Yrs Rs 1000 10 Yr Plan</label>
+            </value>
+            <value>
+                <fullName>Bal Labh 0-20 Yrs Rs 2500 15 Yr Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bal Labh 0-20 Yrs Rs 2500 15 Yr Plan</label>
+            </value>
+            <value>
+                <fullName>Bal Labh 0-20 Yrs Rs 5000 20 Yr Plan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bal Labh 0-20 Yrs Rs 5000 20 Yr Plan</label>
+            </value>
+            <value>
+                <fullName>Rs 1000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs 1000</label>
+            </value>
+            <value>
+                <fullName>Rs 2500</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs 2500</label>
+            </value>
+            <value>
+                <fullName>Rs 500</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs 500</label>
+            </value>
+            <value>
+                <fullName>Rs 5000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs 5000</label>
+            </value>
+            <value>
+                <fullName>Rs.1,000 / month</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.1,000 / month</label>
+            </value>
+            <value>
+                <fullName>Rs.1,500 / month</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.1,500 / month</label>
+            </value>
+            <value>
+                <fullName>Rs.12,000 / year</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.12,000 / year</label>
+            </value>
+            <value>
+                <fullName>Rs.18,000 / year</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.18,000 / year</label>
+            </value>
+            <value>
+                <fullName>Rs.2,000 / month</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.2,000 / month</label>
+            </value>
+            <value>
+                <fullName>Rs.24,000 / year</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.24,000 / year</label>
+            </value>
+            <value>
+                <fullName>Rs.3,000 / month</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.3,000 / month</label>
+            </value>
+            <value>
+                <fullName>Rs.36,000 / year</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.36,000 / year</label>
+            </value>
+            <value>
+                <fullName>Rs.500 / month</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.500 / month</label>
+            </value>
+            <value>
+                <fullName>Rs.6,000 / year</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rs.6,000 / year</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>(HFLEN003) HF Jeevan Samriddhi</controllingFieldValue>
+            <valueName>HF Jeevan Samriddhi (HFLEN003/25-35 A/1000 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLEN003) HF Jeevan Samriddhi</controllingFieldValue>
+            <valueName>HF Jeevan Samriddhi (HFLEN003/36-45 A/2500 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLEN003) HF Jeevan Samriddhi</controllingFieldValue>
+            <valueName>HF Jeevan Samriddhi (HFLEN003/46-55 A/5000 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLCP004) HF Bal Labh</controllingFieldValue>
+            <valueName>HF Bal Labh (HFLCP004/0-20 A/1000 INR/10 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLCP004) HF Bal Labh</controllingFieldValue>
+            <valueName>HF Bal Labh (HFLCP004/0-20 A/2500 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLCP004) HF Bal Labh</controllingFieldValue>
+            <valueName>HF Bal Labh (HFLCP004/0-20 A/5000 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLUL005) HF Nivesh Jeevan</controllingFieldValue>
+            <valueName>HF Nivesh Jeevan (HFLUL005/25-35 A/1000 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLUL005) HF Nivesh Jeevan</controllingFieldValue>
+            <valueName>HF Nivesh Jeevan (HFLUL005/36-45 A/2500 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLUL005) HF Nivesh Jeevan</controllingFieldValue>
+            <valueName>HF Nivesh Jeevan (HFLUL005/46-55 A/5000 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFHEN006) HF Jeevan Labh</controllingFieldValue>
+            <valueName>HF Jeevan Labh (HFHEN006/25-35 A/1000 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFHEN006) HF Jeevan Labh</controllingFieldValue>
+            <valueName>HF Jeevan Labh (HFHEN006/36-45 A/2500 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFHEN006) HF Jeevan Labh</controllingFieldValue>
+            <valueName>HF Jeevan Labh (HFHEN006/46-55 A/5000 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLCP007) HF Bal Jeevan Umang</controllingFieldValue>
+            <valueName>HF Bal Jeevan Umang (HFLCP007/0-20 A/1000 INR/10 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLCP007) HF Bal Jeevan Umang</controllingFieldValue>
+            <valueName>HF Bal Jeevan Umang (HFLCP007/0-20 A/2500 INR/15 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLCP007) HF Bal Jeevan Umang</controllingFieldValue>
+            <valueName>HF Bal Jeevan Umang (HFLCP007/0-20 A/5000 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLUL008) HF Index Plus</controllingFieldValue>
+            <valueName>HF Index Plus (HFLUL008/25-35 A/1000 INR/10 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLUL008) HF Index Plus</controllingFieldValue>
+            <valueName>HF Index Plus (HFLUL008/36-45 A/2500 INR/10 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLUL008) HF Index Plus</controllingFieldValue>
+            <valueName>HF Index Plus (HFLUL008/46-55 A/5000 INR/10 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLTR001) HF Jeevan Suraksha</controllingFieldValue>
+            <valueName>HF Jeevan Suraksha (HFLTR001/25-35 A/500 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFLTR001) HF Jeevan Suraksha</controllingFieldValue>
+            <valueName>HF Jeevan Suraksha (HFLTR001/36-50 A/1000 INR/20 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFHTR002) HF Arogya Suraksha</controllingFieldValue>
+            <valueName>HF Arogya Suraksha (HFHTR002/25-35 A/500 INR/10 TY)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HFHTR002) HF Arogya Suraksha</controllingFieldValue>
+            <valueName>HF Arogya Suraksha (HFHTR002/36-50 A/1000 INR/10 TY)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

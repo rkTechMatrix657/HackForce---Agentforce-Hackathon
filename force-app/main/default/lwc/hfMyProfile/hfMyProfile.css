@@ -1,0 +1,115 @@
+:host {
+    --hf-navy: #0a1f44;
+    --hf-blue: #0070d2;
+    --hf-gold: #c9a227;
+    --hf-bg: #f6f8fb;
+    --hf-text-muted: #5b6b82;
+    display: block;
+    font-family: 'Inter', 'Salesforce Sans', Arial, sans-serif;
+}
+
+.hf-profile {
+    background: var(--hf-bg);
+    padding: 0 24px 96px;
+}
+
+.hf-profile__banner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 48px;
+    text-align: center;
+    background: linear-gradient(135deg, #050D1F 0%, #0A1F44 45%, #0070D2 100%);
+    border-radius: 0 0 28px 28px;
+    margin-bottom: 40px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    max-width: 100vw;
+}
+
+.hf-profile__avatar {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--hf-gold), #f3dfa0);
+    color: var(--hf-navy);
+    font-size: 1.7rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.hf-profile__banner-name {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+}
+
+.hf-profile__banner-email {
+    color: #C7D4EA;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.hf-profile__header {
+    max-width: 720px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.hf-profile__eyebrow {
+    display: inline-block;
+    color: var(--hf-gold);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    margin: 0 0 16px;
+    padding: 6px 16px;
+    border: 1px solid rgba(201, 162, 39, 0.4);
+    border-radius: 999px;
+    background: rgba(201, 162, 39, 0.06);
+}
+
+.hf-profile__heading {
+    color: var(--hf-navy);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
+.hf-profile__subheading {
+    color: var(--hf-text-muted);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.hf-profile__card {
+    max-width: 640px;
+    margin: 0 auto 56px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: 0 12px 28px rgba(10, 31, 68, 0.07);
+    border: 1px solid rgba(10, 31, 68, 0.05);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.hf-profile__card:hover {
+    box-shadow: 0 20px 40px rgba(10, 31, 68, 0.12);
+    transform: translateY(-2px);
+}
+
+.hf-profile__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+.hf-profile__field lightning-output-field {
+    --slds-c-text-color-weak: var(--hf-text-muted);
+}

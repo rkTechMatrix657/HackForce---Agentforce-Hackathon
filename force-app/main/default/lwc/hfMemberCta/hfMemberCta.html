@@ -1,0 +1,43 @@
+<template>
+    <div class="hf-cta">
+        <div class="hf-cta__dots"></div>
+        <div class="hf-cta__orb hf-cta__orb_gold"></div>
+        <div class="hf-cta__orb hf-cta__orb_blue"></div>
+
+        <template if:true={isGuestUser}>
+            <div class="hf-cta__panel">
+                <div class="hf-cta__rule"></div>
+                <p class="hf-cta__eyebrow">Member Access</p>
+                <p class="hf-cta__heading">Already a customer?</p>
+                <p class="hf-cta__subcopy">Login to view your policies, track claims, and update your details &mdash; anytime, anywhere.</p>
+                <div class="hf-cta__actions">
+                    <a href="/HFFinance/s/login" class="hf-cta__btn-primary"><span>Login to My Account</span></a>
+                    <a href="/HFFinance/s/login/SelfRegister" class="hf-cta__btn-ghost">New Here? Sign Up</a>
+                </div>
+            </div>
+            <div class="hf-cta__divider"></div>
+        </template>
+
+        <div class="hf-cta__footer">
+            <p class="hf-cta__brand">HF&nbsp;&#9670;&nbsp;FINANCE</p>
+            <p class="hf-cta__tagline">Health &amp; Life Insurance, built on trust since 2011.</p>
+            <div class="hf-cta__links">
+                <a href="#home" class="hf-cta__link">Home</a>
+                <span class="hf-cta__dot">&#9670;</span>
+                <a href="#about-us" class="hf-cta__link">About Us</a>
+                <span class="hf-cta__dot">&#9670;</span>
+                <a href="#our-plans" class="hf-cta__link">Our Plans</a>
+                <span class="hf-cta__dot">&#9670;</span>
+                <a href="#contact-us" class="hf-cta__link">Contact Us</a>
+                <template if:true={isGuestUser}>
+                    <span class="hf-cta__dot">&#9670;</span>
+                    <a href="/HFFinance/s/login" class="hf-cta__link-gold">Login</a>
+                    <span class="hf-cta__dot">&#9670;</span>
+                    <a href="/HFFinance/s/login/SelfRegister" class="hf-cta__link-gold">Sign Up</a>
+                </template>
+            </div>
+            <div class="hf-cta__hr"></div>
+            <p class="hf-cta__copyright">&copy; 2026 HF Finance. All rights reserved.</p>
+        </div>
+    </div>
+</template>

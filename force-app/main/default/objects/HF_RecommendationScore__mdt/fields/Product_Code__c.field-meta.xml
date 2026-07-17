@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Code__c</fullName>
+    <label>Product Code</label>
+    <type>Text</type>
+    <length>50</length>
+    <description>Specific product code from Product2_ExternalOrgSF__dlm this rule applies to. Leave blank to apply to all products of the Insurance Type.</description>
+</CustomField>

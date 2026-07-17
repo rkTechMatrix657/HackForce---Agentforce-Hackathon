@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ESW_HF_Saathi_Experience_S_1782323442403</label>
+    <site>
+        <urlPathPrefix>ESWHFSaathiExperienceS1782323442403</urlPathPrefix>
+    </site>
+    <space>site/ESW_HF_Saathi_Experience_S_17823234424031</space>
+</DigitalExperienceConfig>

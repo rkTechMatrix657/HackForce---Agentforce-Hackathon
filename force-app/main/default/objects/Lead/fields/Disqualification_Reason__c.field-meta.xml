@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualification_Reason__c</fullName>
+    <label>Disqualification Reason</label>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Not Interested</fullName><default>false</default><label>Not Interested</label></value>
+            <value><fullName>Income Ineligible</fullName><default>false</default><label>Income Ineligible</label></value>
+            <value><fullName>Age Ineligible</fullName><default>false</default><label>Age Ineligible</label></value>
+            <value><fullName>Pre-existing Condition</fullName><default>false</default><label>Pre-existing Condition</label></value>
+            <value><fullName>Duplicate Lead</fullName><default>false</default><label>Duplicate Lead</label></value>
+            <value><fullName>Uncontactable</fullName><default>false</default><label>Uncontactable</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

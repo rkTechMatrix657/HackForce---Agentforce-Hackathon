@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Family_Segment__c</fullName>
+    <label>Family Segment</label>
+    <type>Text</type>
+    <length>50</length>
+    <description>Family segment this rule targets. Values: High Value, Growth, At-Risk, All. Matches Account.Family_Segment__c.</description>
+</CustomField>

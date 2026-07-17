@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>false</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>HF Saathi Queue</name>
+    <queueMembers>
+        <users>
+            <user>ram.k@hackforce.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>HF_Saathi_Routing_Configuration</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Policy Path</masterLabel>
+    <pathAssistantSteps>
+        <info>Prospect has expressed interest. Capture family details, preferred insurance, and initial affordability assessment.</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Needs assessment underway. Confirm sum assured, policy term, premium plan, and policy holder details.</info>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>KYC and proposal form submitted. Verify PAN, address proof, and income documents.</info>
+        <picklistValueName>Documents Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Application sent to underwriting for risk assessment. Monitor for queries or additional requirements.</info>
+        <picklistValueName>Sent for Scrutiny</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Underwriting approved. Share the final premium intimation and confirm payment details with customer.</info>
+        <picklistValueName>Scrutiny Approved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>First premium payment received and confirmed. Policy issuance in process — await policy number from PAS.</info>
+        <picklistValueName>Premium Received</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Policy is live. Record the policy number, stamp Activation Date, and hand off to the Retention Agent.</info>
+        <picklistValueName>Policy Number Generated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Underwriting declined. Capture rejection reason, update Underwriting Status, and advise customer on alternatives.</info>
+        <picklistValueName>Scrutiny Rejected</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Customer withdrew or became unresponsive. Log the disqualification reason and close the policy record.</info>
+        <picklistValueName>Dropped</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Policy</recordTypeName>
+</PathAssistant>

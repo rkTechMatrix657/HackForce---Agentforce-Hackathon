@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "76675028-8b8e-4a32-a348-e76dc0a2c2f1",
+  "headMarkup" : "<script>\n    var userInfo = {};\n    var messagingReady = false;\n\n    function setPrechatFields() {\n        if (!userInfo.email) return;\n        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({\n            \"Email\": userInfo.email,\n            \"ContactId\": userInfo.contactId,\n            \"AccountId\": userInfo.accountId,\n            \"CustomerId\": userInfo.customerId\n        });\n        console.log(\"Prechat fields set:\", userInfo);\n    }\n\n    window.addEventListener('userInfo', function(e) {\n        userInfo.contactId = e.detail.contactId;\n        userInfo.accountId = e.detail.accountId;\n        userInfo.email = e.detail.email;\n        userInfo.customerId = e.detail.customerId;\n        if (messagingReady) setPrechatFields();\n    });\n\n    window.addEventListener(\"onEmbeddedMessagingReady\", function(e) {\n        messagingReady = true;\n        if (userInfo.email) setPrechatFields();\n    });\n</script>",
+  "id" : "a708ee3e-4593-4bf4-b1e1-3f84167b9fbc",
+  "isLockerServiceEnabled" : false,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Starter Template",
+  "type" : "appPage"
+}

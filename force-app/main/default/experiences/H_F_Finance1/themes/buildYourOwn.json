@@ -1,0 +1,96 @@
+{
+  "activeBrandingSetId" : "52dff4c7-8464-479b-ba7b-6b5b633a6588",
+  "customCSS" : "",
+  "developerName" : "starter",
+  "id" : "76675028-8b8e-4a32-a348-e76dc0a2c2f1",
+  "label" : "Build Your Own",
+  "layouts" : {
+    "Inner" : "34785cc9-9162-45f8-848e-8295fa3b4262",
+    "Login" : "682e73cd-5cf0-4e23-9174-a59f8b4092bd",
+    "ServiceNotAvailable" : "d8d627c9-80d5-4269-9524-e45388a14505"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "682e73cd-5cf0-4e23-9174-a59f8b4092bd",
+    "label" : "Login",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"background: linear-gradient(160deg, #04080F 0%, #0A1F44 55%, #071B3D 100%); padding: 32px 24px 60px; text-align: center; position: relative; overflow: hidden;\"><div style=\"position: absolute; top: -100px; left: -80px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(201,162,39,0.22), transparent 70%); filter: blur(8px);\"></div><div style=\"position: absolute; bottom: -120px; right: -80px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(0,112,210,0.25), transparent 70%); filter: blur(8px);\"></div><a href=\"/HFFinance\" style=\"position: relative; z-index: 1; display: inline-block;\"><img src=\"/HFFinance/s/sfsites/c/resource/hfFinanceLogo\" alt=\"HF Finance\" style=\"height: 38px; width: auto;\" /></a><p style=\"position: relative; z-index: 1; color: #C7D4EA; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; margin: 14px 0 0;\">Health &amp; Life Insurance, Built on Trust</p></div>"
+        },
+        "componentName" : "forceCommunity:richTextInline",
+        "id" : "f9a1c2d3-1100-4a11-9a11-aaaa11110001",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "f6b20d55-aa28-4c3a-9b06-16c11b4eda95",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "843a11a7-4aa8-45d0-b7c8-2a773d98a2ac",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"background: #06142E; padding: 18px 24px; text-align: center;\"><div style=\"height: 2px; max-width: 200px; margin: 0 auto 14px; background: linear-gradient(90deg, #C9A227, #0070D2, #0A1F44);\"></div><p style=\"color: #7E91B4; font-size: 12px; margin: 0;\">&copy; 2026 HF Finance. Health and Life Insurance for every family.</p></div>"
+        },
+        "componentName" : "forceCommunity:richTextInline",
+        "id" : "f9a1c2d3-1100-4a11-9a11-aaaa11110002",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "13112799-cdfa-4757-855a-ee6f0d93a78a",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1440,
+      "isPageWidthFixed" : true
+    },
+    "componentName" : "siteforce:starterBody",
+    "id" : "34785cc9-9162-45f8-848e-8295fa3b4262",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "43a027c2-3ff6-46ae-ac4f-7ee6a3a2d568",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "id" : "95788e46-d2c1-404b-a0be-78b0513b1a6f",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "id" : "7f61b577-938b-4ec0-a2b8-1b0ff4f36317",
+      "regionName" : "navBar",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "d8d627c9-80d5-4269-9524-e45388a14505",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "b32dbee0-f7db-4a64-80e1-c9266083b0d0",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "980eb1e1-6762-45a5-bd1d-445f6a922868",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

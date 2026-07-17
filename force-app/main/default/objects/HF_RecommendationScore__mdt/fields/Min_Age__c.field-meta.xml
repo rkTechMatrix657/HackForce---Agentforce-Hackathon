@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Min_Age__c</fullName>
+    <label>Min Age</label>
+    <type>Number</type>
+    <precision>3</precision>
+    <scale>0</scale>
+    <description>Minimum customer age (inclusive) for this scoring rule to apply. Set 0 for no minimum.</description>
+</CustomField>

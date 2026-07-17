@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority_Order__c</fullName>
+    <label>Priority Order</label>
+    <type>Number</type>
+    <precision>3</precision>
+    <scale>0</scale>
+    <description>Tie-breaker when two rules have the same score. Lower number = shown first. Set 1 for highest priority products.</description>
+</CustomField>

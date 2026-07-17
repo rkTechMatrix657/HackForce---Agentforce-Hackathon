@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Insurance CRM Full Access</label>
+    <description>Full CRUD on all Insurance CRM objects (Lead, Account, Contact, Opportunity, Feedback__c) and Read+Edit on all custom fields defined in the Insurance CRM data model.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+
+    <!-- ═══════════════════════════════════════════
+         OBJECT PERMISSIONS — CRUD + View/Modify All
+         ═══════════════════════════════════════════ -->
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Contact</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Opportunity</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Feedback__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <!-- ═══════════════════════════
+         FIELD PERMISSIONS — Lead
+         ═══════════════════════════ -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Date_of_Birth__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Annual_Income__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Interested_Insurance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Interested_Premium_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Family_Size__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Existing_Customer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Preferred_Contact_Channel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Lead_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Consent_Marketing__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Disqualification_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ═══════════════════════════════
+         FIELD PERMISSIONS — Account
+         ═══════════════════════════════ -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Head_of_Family__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Number_of_Members__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Number_of_Active_Policies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Total_Premium_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Household_Income__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Customer_Since__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Family_Segment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Churn_Risk_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.CLV__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Preferred_Language__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ═══════════════════════════════
+         FIELD PERMISSIONS — Contact
+         ═══════════════════════════════ -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Role_in_Family__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Gender__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Marital_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Occupation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Annual_Income__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.PAN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.KYC_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Is_Policy_Holder__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Is_Nominee__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Life_Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Member_Churn_Risk__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Next_Best_Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Consent_Marketing__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Customer_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ══════════════════════════════════
+         FIELD PERMISSIONS — Opportunity
+         ══════════════════════════════════ -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Policy_Holder__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Opportunity_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Insurance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Premium_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Premium__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Sum_Assured__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Policy_Term__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Premium_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Premium_Frequency__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Source_Lead__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Quote_Sent_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Application_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Underwriting_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Activation_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Policy_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Propensity_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Next_Best_Action__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ════════════════════════════════════
+         FIELD PERMISSIONS — Feedback__c
+         ════════════════════════════════════ -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Family__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Family_Member__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Related_Policy__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Feedback_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Channel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.NPS_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Sentiment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Feedback_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Resolution__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Triggered_Retention_Action__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Related_Case__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Feedback__c.Agent_Followed_Up__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+</PermissionSet>

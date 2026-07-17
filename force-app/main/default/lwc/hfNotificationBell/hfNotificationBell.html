@@ -1,0 +1,56 @@
+<template>
+    <div class="hf-bell-wrap">
+        <button class={bellClass} onclick={handleToggle} type="button" title="Notifications">
+            <svg viewBox="0 0 24 24" class="hf-bell__icon" aria-hidden="true">
+                <path
+                    d="M12 2C10.34 2 9 3.34 9 5v.29C6.6 6.13 5 8.39 5 11v4l-2 2v1h18v-1l-2-2v-4c0-2.61-1.6-4.87-4-5.71V5c0-1.66-1.34-3-3-3z"
+                    fill="currentColor"
+                ></path>
+                <path d="M9.5 19a2.5 2.5 0 0 0 5 0h-5z" fill="currentColor"></path>
+            </svg>
+            <template if:true={hasUnread}>
+                <span class="hf-bell__badge">{badgeLabel}</span>
+            </template>
+        </button>
+
+        <template if:true={isOpen}>
+            <div class="hf-bell__backdrop" onclick={handleClose}></div>
+        </template>
+
+        <div class={panelClass}>
+            <div class="hf-bell__header">
+                <p class="hf-bell__title">Notifications</p>
+                <template if:true={hasUnread}>
+                    <button class="hf-bell__mark-all" onclick={handleMarkAllRead} type="button">Mark all as read</button>
+                </template>
+            </div>
+
+            <template if:true={hasNotifications}>
+                <div class="hf-bell__list">
+                    <template for:each={notifications} for:item="n">
+                        <div
+                            key={n.key}
+                            class={n.rowClass}
+                            data-id={n.id}
+                            data-case-id={n.caseId}
+                            data-case-number={n.caseNumber}
+                            onclick={handleNotificationClick}
+                        >
+                            <div class="hf-bell__item-dot"></div>
+                            <div class="hf-bell__item-body">
+                                <p class="hf-bell__item-title">{n.commenterName} commented on {n.caseNumber}</p>
+                                <p class="hf-bell__item-preview">{n.preview}</p>
+                                <p class="hf-bell__item-time">{n.timeLabel}</p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template if:false={hasNotifications}>
+                <div class="hf-bell__empty">
+                    <p class="hf-bell__empty-text">You're all caught up — no notifications yet.</p>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

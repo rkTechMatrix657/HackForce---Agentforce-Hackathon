@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Child Education - Parents</label>
+    <protected>false</protected>
+    <values>
+        <field>Insurance_Type__c</field>
+        <value xsi:type="xsd:string">Child Education Insurance</value>
+    </values>
+    <values>
+        <field>Product_Code__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Min_Age__c</field>
+        <value xsi:type="xsd:double">25</value>
+    </values>
+    <values>
+        <field>Max_Age__c</field>
+        <value xsi:type="xsd:double">45</value>
+    </values>
+    <values>
+        <field>Min_Annual_Income__c</field>
+        <value xsi:type="xsd:double">0</value>
+    </values>
+    <values>
+        <field>Family_Segment__c</field>
+        <value xsi:type="xsd:string">All</value>
+    </values>
+    <values>
+        <field>Life_Stage__c</field>
+        <value xsi:type="xsd:string">Parent,Married</value>
+    </values>
+    <values>
+        <field>Base_Score__c</field>
+        <value xsi:type="xsd:double">85</value>
+    </values>
+    <values>
+        <field>Priority_Order__c</field>
+        <value xsi:type="xsd:double">3</value>
+    </values>
+    <values>
+        <field>Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Recommendation_Reason__c</field>
+        <value xsi:type="xsd:string">A Child Education Plan ensures {customerName}'s children's educational dreams are secured regardless of life's uncertainties. Starting early gives the plan maximum time to grow — and includes a built-in premium waiver so the plan continues even if you are unable to pay.</value>
+    </values>
+</CustomMetadata>

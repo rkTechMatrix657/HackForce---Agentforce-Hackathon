@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+
+    <!-- ═══════════════════════════════════════
+         POLICY LIFECYCLE STAGES (Active)
+         ═══════════════════════════════════════ -->
+
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+    </standardValue>
+
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Documents Submitted</fullName>
+        <default>false</default>
+        <label>Documents Submitted</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Sent for Scrutiny</fullName>
+        <default>false</default>
+        <label>Sent for Scrutiny</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>60</probability>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Scrutiny Approved</fullName>
+        <default>false</default>
+        <label>Scrutiny Approved</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>80</probability>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Premium Received</fullName>
+        <default>false</default>
+        <label>Premium Received</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>90</probability>
+    </standardValue>
+
+    <!-- Closed Won -->
+    <standardValue>
+        <fullName>Policy Number Generated</fullName>
+        <default>false</default>
+        <label>Policy Number Generated</label>
+        <closed>true</closed>
+        <won>true</won>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+    </standardValue>
+
+    <!-- Closed Lost -->
+    <standardValue>
+        <fullName>Scrutiny Rejected</fullName>
+        <default>false</default>
+        <label>Scrutiny Rejected</label>
+        <closed>true</closed>
+        <won>false</won>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+    </standardValue>
+
+    <!-- Closed Lost -->
+    <standardValue>
+        <fullName>Dropped</fullName>
+        <default>false</default>
+        <label>Dropped</label>
+        <closed>true</closed>
+        <won>false</won>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+    </standardValue>
+
+    <!-- ═══════════════════════════════════════
+         LEGACY STANDARD STAGES (Deactivated)
+         ═══════════════════════════════════════ -->
+
+    <standardValue>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+        <label>Prospecting</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+        <label>Qualification</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Needs Analysis</fullName>
+        <default>false</default>
+        <label>Needs Analysis</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Value Proposition</fullName>
+        <default>false</default>
+        <label>Value Proposition</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Id. Decision Makers</fullName>
+        <default>false</default>
+        <label>Id. Decision Makers</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>60</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Perception Analysis</fullName>
+        <default>false</default>
+        <label>Perception Analysis</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>70</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Proposal/Price Quote</fullName>
+        <default>false</default>
+        <label>Proposal/Price Quote</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>75</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Negotiation/Review</fullName>
+        <default>false</default>
+        <label>Negotiation/Review</label>
+        <closed>false</closed>
+        <won>false</won>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>90</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+        <label>Closed Won</label>
+        <closed>true</closed>
+        <won>true</won>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <label>Closed Lost</label>
+        <closed>true</closed>
+        <won>false</won>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <isActive>false</isActive>
+    </standardValue>
+
+</StandardValueSet>

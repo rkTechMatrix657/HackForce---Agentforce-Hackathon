@@ -1,0 +1,206 @@
+:host {
+    --hf-navy: #0a1f44;
+    --hf-blue: #0070d2;
+    --hf-gold: #c9a227;
+    --hf-text-muted: #5b6b82;
+    display: block;
+    font-family: 'Inter', 'Salesforce Sans', Arial, sans-serif;
+}
+
+.hf-bell-wrap {
+    position: relative;
+}
+
+.hf-bell {
+    position: relative;
+    background: #ffffff;
+    border: 1.5px solid #d6dee8;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--hf-navy);
+    padding: 0;
+    box-shadow: 0 4px 12px rgba(10, 31, 68, 0.08);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hf-bell:hover {
+    border-color: var(--hf-blue);
+    box-shadow: 0 8px 18px rgba(0, 112, 210, 0.18);
+    transform: translateY(-1px);
+}
+
+.hf-bell_active {
+    border-color: var(--hf-gold);
+}
+
+.hf-bell__icon {
+    width: 19px;
+    height: 19px;
+}
+
+.hf-bell__badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: linear-gradient(135deg, #d63838, #a82424);
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: 800;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    box-shadow: 0 2px 6px rgba(168, 36, 36, 0.4);
+    animation: hf-bell-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes hf-bell-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+}
+
+.hf-bell__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 199;
+    background: transparent;
+}
+
+.hf-bell__panel {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: 340px;
+    max-height: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 24px 48px rgba(10, 31, 68, 0.22);
+    border: 1px solid rgba(10, 31, 68, 0.06);
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.hf-bell__panel_open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hf-bell__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-bottom: 1px solid #eef1f6;
+}
+
+.hf-bell__title {
+    color: var(--hf-navy);
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.hf-bell__mark-all {
+    background: none;
+    border: none;
+    color: var(--hf-blue);
+    font-weight: 700;
+    font-size: 0.74rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hf-bell__mark-all:hover {
+    color: var(--hf-navy);
+}
+
+.hf-bell__list {
+    overflow-y: auto;
+    max-height: 340px;
+}
+
+.hf-bell__item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 14px 18px;
+    cursor: pointer;
+    border-bottom: 1px solid #f4f6f9;
+    transition: background 0.15s ease;
+}
+
+.hf-bell__item:hover {
+    background: #f6f8fb;
+}
+
+.hf-bell__item_unread {
+    background: rgba(0, 112, 210, 0.04);
+}
+
+.hf-bell__item-dot {
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 6px;
+    background: transparent;
+}
+
+.hf-bell__item_unread .hf-bell__item-dot {
+    background: var(--hf-gold);
+}
+
+.hf-bell__item-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.hf-bell__item-title {
+    color: var(--hf-navy);
+    font-weight: 700;
+    font-size: 0.82rem;
+    margin: 0 0 4px;
+}
+
+.hf-bell__item-preview {
+    color: var(--hf-text-muted);
+    font-size: 0.78rem;
+    margin: 0 0 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.hf-bell__item-time {
+    color: #9aa8bd;
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.hf-bell__empty {
+    padding: 32px 20px;
+    text-align: center;
+}
+
+.hf-bell__empty-text {
+    color: var(--hf-text-muted);
+    font-size: 0.85rem;
+    margin: 0;
+}

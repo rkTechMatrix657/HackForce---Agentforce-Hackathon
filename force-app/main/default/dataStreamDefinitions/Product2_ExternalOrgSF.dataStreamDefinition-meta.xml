@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>false</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>SalesforceDotCom_ExternalOrgSF</dataConnector>
+    <dataConnectorType>SalesforceDotCom</dataConnectorType>
+    <dataExtractMethods>FULL_REFRESH</dataExtractMethods>
+    <dataPlatformDataSetItemName>SFDC</dataPlatformDataSetItemName>
+    <dataSource>Salesforce_ExternalOrgSF</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>Product2_ExternalOrgSF</masterLabel>
+    <mktDataLakeObject>Product2_ExternalOrgSF__dll</mktDataLakeObject>
+    <mktDataTranObject>Product2_ExternalOrgSF</mktDataTranObject>
+</DataStreamDefinition>

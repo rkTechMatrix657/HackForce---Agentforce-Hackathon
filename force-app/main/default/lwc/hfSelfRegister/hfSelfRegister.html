@@ -1,0 +1,60 @@
+<template>
+    <div class="hf-register">
+        <div class="hf-register__card">
+            <p class="hf-register__eyebrow">Member Access</p>
+            <h1 class="hf-register__title">Create Your Account</h1>
+            <p class="hf-register__subtitle">Join HF Finance to manage your policies, track claims, and more.</p>
+
+            <template if:true={isSuccess}>
+                <div class="hf-register__success">{successMessage}</div>
+            </template>
+
+            <template if:false={isSuccess}>
+                <form class="hf-register__form" onsubmit={handleSubmit}>
+                    <template if:true={hasError}>
+                        <div class="hf-register__error">{errorMessage}</div>
+                    </template>
+
+                    <div class="hf-register__row">
+                        <div class="hf-register__field">
+                            <label class="hf-register__label">First Name</label>
+                            <input class="hf-register__input" type="text" value={firstName} onchange={handleFirstName} disabled={isDisabled} required />
+                        </div>
+                        <div class="hf-register__field">
+                            <label class="hf-register__label">Last Name</label>
+                            <input class="hf-register__input" type="text" value={lastName} onchange={handleLastName} disabled={isDisabled} required />
+                        </div>
+                    </div>
+
+                    <div class="hf-register__field">
+                        <label class="hf-register__label">Email</label>
+                        <input class="hf-register__input" type="email" value={email} onchange={handleEmail} disabled={isDisabled} required />
+                    </div>
+
+                    <div class="hf-register__field">
+                        <label class="hf-register__label">Phone (optional)</label>
+                        <input class="hf-register__input" type="tel" value={phone} onchange={handlePhone} disabled={isDisabled} />
+                    </div>
+
+                    <div class="hf-register__row">
+                        <div class="hf-register__field">
+                            <label class="hf-register__label">Password</label>
+                            <input class="hf-register__input" type="password" value={password} onchange={handlePassword} disabled={isDisabled} required />
+                        </div>
+                        <div class="hf-register__field">
+                            <label class="hf-register__label">Confirm Password</label>
+                            <input class="hf-register__input" type="password" value={confirmPassword} onchange={handleConfirmPassword} disabled={isDisabled} required />
+                        </div>
+                    </div>
+
+                    <button class="hf-register__submit" type="submit" disabled={isDisabled}>
+                        <template if:false={isSubmitting}>Create Account</template>
+                        <template if:true={isSubmitting}>Creating Account…</template>
+                    </button>
+                </form>
+            </template>
+
+            <p class="hf-register__footer-link"><a href="/HFFinance/s/login">Already have an account? Log in</a></p>
+        </div>
+    </div>
+</template>

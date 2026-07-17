@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommendation_Reason__c</fullName>
+    <label>Recommendation Reason</label>
+    <type>LongTextArea</type>
+    <length>1000</length>
+    <visibleLines>4</visibleLines>
+    <description>Template for why this product is recommended. Used by HF Saathi to explain the recommendation to the customer in a personal, human way. Supports placeholders like {customerName}, {age}, {lifeStage}.</description>
+</CustomField>

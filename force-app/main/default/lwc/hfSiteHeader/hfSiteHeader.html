@@ -1,0 +1,27 @@
+<template>
+    <header class={headerClass}>
+        <a href="#home" class="hf-header__logo">
+            <img src={logoUrl} alt="HF Finance" class="hf-header__logo-img" />
+        </a>
+        <nav class="hf-header__nav">
+            <template for:each={navItems} for:item="item">
+                <a key={item.label} href={item.href} class="hf-header__nav-link">{item.label}</a>
+            </template>
+        </nav>
+        <div class="hf-header__actions">
+            <template if:true={isGuestUser}>
+                <a href="/HFFinance/s/login/SelfRegister" class="hf-header__signup-link">Sign Up</a>
+                <a href="/HFFinance/s/login" class="hf-header__login-btn">Login</a>
+            </template>
+            <template if:false={isGuestUser}>
+                <c-hf-notification-bell></c-hf-notification-bell>
+                <button class="hf-header__profile-btn" onclick={handleProfileClick} title="My Profile" type="button">
+                    <svg viewBox="0 0 24 24" class="hf-header__profile-icon" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" fill="currentColor"></circle>
+                        <path d="M4 20c0-4 4-6 8-6s8 2 8 6" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </template>
+        </div>
+    </header>
+</template>
